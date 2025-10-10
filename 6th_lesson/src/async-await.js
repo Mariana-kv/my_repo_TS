@@ -9,7 +9,6 @@ async function runData() {
     const data = await getCat();
     console.log(data);
 }
-runData();
 (async () => {
     console.log('before start');
     await runData();

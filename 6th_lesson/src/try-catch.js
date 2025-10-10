@@ -24,4 +24,8 @@ async function getCat(url) {
 }
 
 const url = 'https://api.thecatapi.com/v1/test/search?limit=10';
-getCat(url);
+(async () => {
+    console.log('before start');
+    await getCat(url);
+    console.log('after start');
+})();
